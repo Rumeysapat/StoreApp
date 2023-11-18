@@ -1,0 +1,15 @@
+.vs/
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+obj/
+*.user
+*.suo
+*.sln.docstates
+binaries/
+artifacts/ 
+.vs/
+bin/
+obj/
+launchSettings.json
+
