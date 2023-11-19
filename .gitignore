@@ -22,5 +22,9 @@ StoreApp/.DS_Store
 *.db
 *.db-shm
 *.db-wal
+Store/ProductDb.db
+Store/ProductDb.db-shm
+Store/ProductDb.db-wal
+
 
 
