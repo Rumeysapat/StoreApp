@@ -18,3 +18,9 @@ Store/.DS_Store
 .DS_Store
 StoreApp/.DS_Store 
 
+# SQLite veritabanı dosyalarını ignore et
+*.db
+*.db-shm
+*.db-wal
+
+
