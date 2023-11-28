@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using StoreApp.Models;
+
 
 
 public class RepositoryContext : DbContext
