@@ -1,4 +1,3 @@
-
 @model List<StoreApp.Models.Product>
 
 
@@ -26,6 +25,10 @@
             <p>
                 @prd.Price
             </p>
+            <p>
+                <a href="/product/get/@prd.ProductId">Get Details</a>
+            </p>
+
         </div>
 
     }
