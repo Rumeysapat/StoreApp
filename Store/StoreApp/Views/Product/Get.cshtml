@@ -1,4 +1,7 @@
-@model StoreApp.Models.Product
+
+
+
+@model Product
 
 <h3>
     @Model.ProductName
@@ -9,3 +12,9 @@
 <p>
     @Model.Description
 </p>
+
+@section Header{
+    <div>
+        Header for only Get
+    </div>
+}
