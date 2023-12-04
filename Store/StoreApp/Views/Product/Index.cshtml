@@ -11,6 +11,17 @@
 @foreach (Product prd in Model)
 
 {
-   
-   <partial name ="_ProductCard" model="@prd"></partial>
+    <div>
+    <h3>
+        @prd.ProductName
+    </h3>
+    <p>
+        @prd.Price
+    </p>
+    <p>
+        <a href="/product/get/@prd.ProductId">Get Details</a>
+    </p>
+
+</div>
+
 }
