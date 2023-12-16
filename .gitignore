@@ -27,5 +27,17 @@ Store/ProductDb.db-shm
 Store/ProductDb.db-wal
 
 
+# libman klasörü
+lib
+
+# libman klasöründeki tüm .log dosyaları
+lib/*.log
+
+# libman klasörü altındaki tüm .tmp uzantılı dosyalar
+lib/**/*.tmp
+
+
+
+
 
 
