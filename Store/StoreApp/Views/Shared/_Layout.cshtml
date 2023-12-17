@@ -5,6 +5,13 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <!-- ^ Burada CSS dosyasının uzantısını ekledim -->
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -12,18 +19,26 @@
 
 <body>
     <header>
-        Store App : Header
+       
         <partial name="_Navbar"></partial>
-        @RenderSection("Header",false)
+        @RenderSection("Header", false)
     </header>
-    <main>
+    <div class="container">
+    <main role="main" class="pb-3">
         @RenderBody()
     </main>
+    </div>
     <footer>
-          @RenderSection("Footer",false)
+        @RenderSection("Footer", false)
         Footer
     </footer>
-@await RenderSectionAsync("Scripts",required:false)
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 
 </html>

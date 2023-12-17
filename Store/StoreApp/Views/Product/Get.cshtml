@@ -1,6 +1,3 @@
-
-
-
 @model Product
 
 <h3>
@@ -12,8 +9,17 @@
 <p>
     @Model.Description
 </p>
+<div class="btn-group">
+    <a type="button" class="btn btn-outline-primary" href="/Home"> <i class="fa-solid fa-house"></i> Home</a>
+    <a type="button" class="btn btn-primary" href="/Product"><i class="fa-solid fa-list"></i> Products</a>
+</div>
 
-@section Header{
+
+
+
+
+
+@section Header {
     <div>
         Header for only Get
     </div>

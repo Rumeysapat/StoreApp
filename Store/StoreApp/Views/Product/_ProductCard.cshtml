@@ -3,7 +3,10 @@
 <div>
     <h2>@Model.ProductName</h2>
     <p>@Model.Price.ToString("c")</p>
+    
+    <a  type="button" class="btn btn-info" asp-action="get" asp-route-id="@Model.ProductId" >  <i class="fa-solid fa-arrow-right"></i> Get Details</a>
+
     <hr />
-    <a asp-action="get" asp-route-id="@Model.ProductId">Get Details</a>
+  
 
 </div>
