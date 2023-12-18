@@ -37,7 +37,14 @@ lib/*.log
 # libman klasörü altındaki tüm .tmp uzantılı dosyalar
 lib/**/*.tmp
 
+Store/StoreApp/Migrations 
+
+# Entity Framework Core migrations klasörü
+/Migrations/
+
 Store/StoreApp/Migrations
+
+
 
 
 
