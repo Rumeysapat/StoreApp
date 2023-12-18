@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using StoreApp.Models;
+using Entities;
 
 
 
