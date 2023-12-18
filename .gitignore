@@ -22,9 +22,10 @@ StoreApp/.DS_Store
 *.db
 *.db-shm
 *.db-wal
-Store/ProductDb.db
-Store/ProductDb.db-shm
-Store/ProductDb.db-wal
+
+ Store/StoreApp/Database/ProductDb.db
+ Store/StoreApp/Database/ProductDb.db-shm
+ Store/StoreApp/Database/ProductDb.db-wal
 
 
 # libman klasörü
@@ -35,6 +36,8 @@ lib/*.log
 
 # libman klasörü altındaki tüm .tmp uzantılı dosyalar
 lib/**/*.tmp
+
+Store/StoreApp/Migrations
 
 
 
