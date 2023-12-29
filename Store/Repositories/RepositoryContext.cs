@@ -5,6 +5,7 @@ namespace Repositories;
 public class RepositoryContext : DbContext
 {
     public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories{get; set;}
 
     public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
     {
@@ -25,11 +26,20 @@ public class RepositoryContext : DbContext
             new Product { ProductId = 3, ProductName = "Ürün 3", Price = 39.99m, Description = "Bu ürünün açıklaması 3" }
 
         );
+         base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<Category>().ToTable("Kategori");
+        modelBuilder.Entity<Category>().Property(x => x.CategoryId).HasColumnName("KategoriNumarası");
+        modelBuilder.Entity<Category>().Property(x => x.CategoryName).HasColumnName("KategoriAdi");
+
+        modelBuilder.Entity<Category>().HasData(
+         new Category { CategoryId = 1, CategoryName = "Kategori 1" },
+          new Category { CategoryId = 2, CategoryName = "Kategori 2" },
+            new Category { CategoryId = 3, CategoryName = "Kategori 3" });
+
+
     }
 
-
-
-
+   
 
 
 }
