@@ -15,9 +15,9 @@ namespace Services
 
         }
 
-        public IProductService ProductService => throw new NotImplementedException();
+        public IProductService ProductService =>_productService;
 
-        public ICategoryService CategoryService => throw new NotImplementedException();
+        public ICategoryService CategoryService =>  _categoryService ;
     }
 
 
