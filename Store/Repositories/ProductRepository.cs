@@ -15,5 +15,10 @@ namespace Repositories
         {
            return FindByCondition(p=>p.ProductId.Equals(id),trackChanges);
         }
+
+        public Product? GetOneProduct(bool trackChanges)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
