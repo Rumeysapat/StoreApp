@@ -8,6 +8,11 @@ namespace Repositories.Contracts
 
         Product ? GetOneProduct(int id, bool trackChanges);
         Product? GetOneProduct(bool trackChanges);
+
+        void CreateProduct(Product product);
+        
+
+
     }
 
 
